@@ -446,6 +446,91 @@
 }
 
 /* -------------------------------------------------------
+   7b. SERVICES DETAIL EVIDENCE
+   ------------------------------------------------------- */
+.services-detail_evidence {
+  font-size: 0.9375rem;
+  color: var(--_color---swatch--green, #5F9F35);
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--_color---swatch--green, #5F9F35);
+}
+
+/* -------------------------------------------------------
+   7c. TEAM SECTION (used on index.html)
+   ------------------------------------------------------- */
+.about-team_section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.about-team_heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.about-team_subtitle {
+  font-size: 1.125rem;
+  color: var(--aha-text-muted, rgba(0,0,0,0.55));
+  margin-bottom: 3rem;
+  max-width: 36em;
+}
+.team_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 2rem;
+}
+.team_card {
+  text-align: center;
+}
+.team_card_photo {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 0.75rem;
+  background: #f0f0f0;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.team_card_photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team_card_name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.team_card_role {
+  font-size: 0.8125rem;
+  color: var(--aha-text-muted, rgba(0,0,0,0.55));
+}
+
+/* -------------------------------------------------------
+   7d. CONTACT INFO ROW (CTA section)
+   ------------------------------------------------------- */
+.cta_contact-info {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  font-size: var(--_typography---font-size--text-small);
+  opacity: 0.65;
+}
+.cta_contact-info a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.cta_contact-info a:hover { opacity: 0.7; }
+@media screen and (max-width: 479px) {
+  .cta_contact-info {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* -------------------------------------------------------
    8. ABOUT PAGE
    ------------------------------------------------------- */
 .about-timeline_wrap {
